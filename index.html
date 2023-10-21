@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <title>እቁብ </title>
+  <style>
+    .custom-container {
+      background-color: lightgoldenrodyellow;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    .custom-table {
+      background-color: lightgoldenrodyellow;
+      border-radius: 15px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body style="background-image: url('img/istockphoto-690053846-170667a.jpg');
+background-size: cover;
+background-repeat: repeat;">
+  <div class="container mt-5">
+    <div class="justify-content-around gx-5">
+      <div class="col-md-5 py-4 shadow my-3 custom-container">
+        <div class="my-3">
+          <h2  class="text-center">እቁብ</h2>
+          <label for="firstName" class="form-label">ስም</label>
+          <input type="text" class="form-control" id="firstName" placeholder="First Name (ስም)">
+          <label for="lastName" class="form-label">የአባት ስም</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Last Name(የአባት ስም)">
+          <label for="amount" class="form-label">የብር መጠን</label>
+          <input type="number" class="form-control" id="amount" placeholder="Amount In Birr(የብር መጠን)">
+        </div>
+        <div class="d-flex justify-content-around">
+          <button class="btn btn-primary" id="btn_add">አስገባ</button>
+          <button class="btn btn-danger" id="btn_reset">ዳግም አስጀምር</button>
+        </div>
+        <button class="btn btn-warning w-100 my-2 d-none btn-generate">እቁብ አውጣ</button>
+      </div>
+      <div class="col-md-6 my-3 custom-table">
+        <table class="table shadow">
+          <thead>
+            <tr class="d-none heading">
+              <th scope="col">#</th>
+              <th scope="col">ስም</th>
+              <th scope="col">የአባት ስም</th>
+              <th scope="col">የብር መጠን </th>
+            </tr>
+          </thead>
+          <tbody class="append-div">
+          </tbody>
+        </table>
+        <div class="equb-box w-100 bg-warning p-2 text-center text-uppercase d-none">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/bootstrap.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
